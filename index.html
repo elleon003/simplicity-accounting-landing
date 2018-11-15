@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simplicity Accounting</title>
+
+	<!-- Normalize -->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	<header>		
+		<a class="logo" href="#"><img class="logo" alt="Simplicity Accounting" src="img/logo.png"></a>
+		<button class="collapsible">Menu</button>
+		<div class="content">
+			<nav>
+				<ul class="menu">
+					<a href="#about"><li class="nav-item">About</li></a>
+					<a href="#services"><li class="nav-item">Services</li></a>
+					<a href="#contact"><li class="nav-item">Contact</li></a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="about" class="row container">
+		<h2>About</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget tortor molestie rutrum. In eget suscipit arcu. Proin interdum euismod leo. Mauris nec felis nec lacus aliquet condimentum. Vestibulum placerat, nibh nec sodales suscipit, risus sem accumsan lacus, at maximus lectus purus et mi. Praesent lacinia nibh nec mauris fringilla sagittis. Duis dignissim elit et dolor aliquet suscipit.</p>
+	</section>
+	<section id="services" class="container">
+		<h2>Services</h2>
+		<div class="row">
+			<div class="column">
+				<i class="fas fa-briefcase fa-2x"></i>
+				<h3>Tax Planning and Compliance</h3>
+				<p>Keep track of taxes that you owe throughout the year to minimize surprises and stress at filing time. Take advantage of strategies to reduce how much you will owe. Annual filing made easy to understand.</p>
+			</div>
+			<div class="column">
+				<i class="fas fa-briefcase fa-2x"></i>
+				<h3>Accounting Packages</h3>
+				<p>We offer monthly or quarterly reporting and advice to help you analyze, manage, and grow your cash flow. We give insights into trends in your business and performance against industry standards. We customize each package to give you the information you need in a simple format.</p>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="row container">
+		<h2>Contact</h2>
+		<p>If you have questions, or would like to schedule a call or consult, please use the form below to reach out!</p>
+		<form id="contactForm" name="sentMessage" novalidate="novalidate" method="POST" action="https://formspree.io/janeen@simplicityaccounting.co">
+			<label for="name">Name: </label>
+			<input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name." name="Name">
+			<label for="email">Email: </label>
+			<input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address." name="_replyto">
+			<label for="phone">Phone Number: </label>
+			<input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+			<label for="message">Message: </label>
+			<textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message." name="message"></textarea>
+			<button id="sendMessageButton" class="btn" type="submit">Send Message</button>
+		</form>
+	</section>
+	<footer>
+		<p>&copy; 2018 Simplicity Accounting</p>
+	</footer>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
